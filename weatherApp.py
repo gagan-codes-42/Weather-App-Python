@@ -33,7 +33,7 @@ def getWeather():
 
     # see lecture 8 to setup API
     # see lecture 11 -> to use one-call instead of standard API
-    api = "https://api.openweathermap.org/data/3.0/onecall?lat="+str(location.latitude)+"&lon="+str(location.latitude)+"&units=metric&exclude=hourly&appid={8357da0f06061420bd9840e602cdc830}"
+    api = "https://api.openweathermap.org/data/3.0/onecall?lat="+str(location.latitude)+"&lon="+str(location.latitude)+"&units=metric&exclude=hourly&appid={}"
 
     #lec-9 onwards
     json_data = requests.get(api).json()
